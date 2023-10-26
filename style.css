@@ -1,53 +1,32 @@
-:root {
-    --grid-col-breakpoint: 10rem;
-}
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-.grid-auto-flow {
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 1rem;
-
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    li {
-        outline: 1px dashed red;
-    }
-}
-
-.center {
-    display: grid;
-    place-content: center;
-
-    width: 90vw;
-    height: 30vh;
-    outline: 1px dashed blue;
-}
-
-.responsive-columns {
-    display: grid;
-    grid-template-columns: repeat(
-    auto-fit,
-    minmax(var(--grid-col-breakpoint), 1fr)
-  );
-    grid-gap: 1rem;
-
-    width: 90vw;
-
-    span {
-        outline: 1px dashed green;
-    }
-}
-
-* {
+*{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-body {
-    min-height: 100vh;
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    background-color: peachpuff;
+}
+
+.container{
+    max-width: 60rem;
+    margin: 100px auto;
+    padding: .625rem;
     display: grid;
-    place-items: center;
-    font-family: "Baloo 2", sans-serif;
-    font-size: 3rem;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.625rem;
+}
+.item{
+    background: steelblue;
+    color: whitesmoke;
+    font-size: 1.25rem;
+    padding: 1.25rem;
+    border: lightskyblue 1px solid;
 }
