@@ -1,0 +1,10 @@
+colours to use!
+
+#CEA481 - tan skin brown
+#AB6045 - brown skin tone
+#603A2E - dark brown
+#D2C9BD - perfect background
+
+images:
+<img src="https://picsum.photos/500/500" alt="Funky">
+-- change the alt though! :)
