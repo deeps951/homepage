@@ -1,65 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Photographer</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Andrew Cox - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-<!-- Hero Section -->
-<section class="hero">
-    <h1>Welcome to My Portfolio</h1>
-</section>
-
-<!-- About Section -->
-<section class="about">
-    <h2>About Me</h2>
-    <p>Write a brief introduction about yourself here.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dignissimos dolore doloribus esse, ipsam laborum maiores molestias mollitia nisi obcaecati optio placeat quia ratione rem sapiente tempore! Amet, harum.</p>
-</section>
-
-<!-- Image of You -->
-<section class="image-of-you">
-    <img src="https://picsum.photos/500/700" alt="Andrew Cox">
-    <h2>Andrew Cox</h2>
-</section>
-
-<!-- Portfolio Section -->
-<section class="portfolio">
-    <h2>Portfolio</h2>
-    <div class="gallery">
-        <div class="photo">
-            <img src="https://picsum.photos/500/500" alt="Funky">
-        </div>
-        <div class="photo">
-            <img src="https://picsum.photos/500/500" alt="Funky">
-        </div>
-        <!-- Add more photos here -->
+<nav id="desktop-nav">
+    <div class="logo">Andrew Cox</div>
+    <div class="">
+        <ul class="nav-links">
+            <li><a href="#about">about</a></li>
+            <li><a href="#experience">experience</a></li>
+            <li><a href="#photos">photos</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
     </div>
-</section>
+</nav>
+<nav class="hamburger-nav">
+    <div class="logo">Andrew Cox</div>
+    <div class="hamburger-menu">
+        <div class="hammburger-icon" onclick="toggleMenu()"></div>
+    </div>
+</nav>
 
-<!-- Gallery section -->
-<div class="gallery">
-    <img src="https://picsum.photos/500/500" alt="Funky">
-</div>
-
-<div class="thumbnails">
-    <img src="https://picsum.photos/500/500" alt="Funky">
-    <img src="https://picsum.photos/500/500" alt="Funky">
-    <img src="https://picsum.photos/500/500" alt="Funky">
-    <!-- Add more thumbnail images here -->
-</div>
-
-<!-- Contact Section -->
-<section class="contact">
-    <h2>Contact Me</h2>
-    <p>Contact information and a contact form can be added here.</p>
-</section>
-
-<!-- Footer -->
-<footer>
-    <p>&copy; 2023 Your Name</p>
-</footer>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,3 +1,6 @@
+/* import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 /* styles.css */
 :root {
     --primary-color: #333;
@@ -6,57 +9,55 @@
     --background-color: #D2C9BD
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: var(--background-color);
+/* global styles */
+* {
+
     margin: 0;
     padding: 0;
 }
-
-.hero {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 100px 0;
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color);
 }
 
-.about {
-    background: var(--secondary-color);
+html{
+    scroll-behavior: smooth;
+}
+p{
     color: var(--text-color);
-    padding: 40px 0;
 }
 
-.image-of-you {
-    text-align: center;
-    padding: 20px 0;
+/* transition */
+a,.btn{
+    transition: all 300ms ease-in-out;
 }
 
-.portfolio {
-    padding: 40px 0;
-}
-
-.gallery {
+/* desktop nav */
+nav, .nav-links{
     display: flex;
-    flex-wrap: wrap;
-}
+    text-transform: capitalize;
 
-.photo {
-    flex: 1;
-    margin: 10px;
-    border: 3px solid #000; /* 3-pixel black border */
-    border-radius: 10px; /* Rounded corners */
-    overflow: hidden; /* Clip the corners inside the border */
 }
-
-.contact {
-    background: var(--secondary-color);
-    padding: 40px 0;
-    text-align: center;
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
 }
-
-footer {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 10px 0;
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+    text-decoration-color: hotpink;
+}
+a:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+.logo{
+    font-size: 2rem;
 }
