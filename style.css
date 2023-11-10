@@ -19,3 +19,14 @@ body{
     font-family: 'Open Sans', sans-serif;
     background-color: var(--background-color);
 }
+.box{
+    background: rebeccapurple;
+    width: 200px;
+    height: 200px;
+}
+
+@media (width >= 900px){
+    .box{
+        background: red;
+    }
+}
